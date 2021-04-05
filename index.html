@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> mercury dishes </title>
+    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+<body>
+    <div class="slider">
+        <section id="banner">
+            <!--logo-->
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" ></a>
+        </div>
+        <!--title-->
+        <div class="banner-text">
+            <h1> MERCURY DISHES</h1>
+            <P>GOOD FOOD GOOD  MOOD</P>
+        </div>
+        <div class="banner-btn">
+            <a href="menu.html"><span></span> MENU</a>
+            <a href="http://localhost/Online-Food/login.php"><span></span>ORDER ONLINE</a>
+            <a href="deals.html"><span></span>BEST DEALS</a>
+        </div>
+    </div>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html"> HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="testimonials.html">TESTIMONALS</a></li>
+                <li><a href="http://localhost/Online-Food/login.php">LOGIN/SIGN-UP</li>
+                <li><a href="contact.html">FIND US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.jpg" id="menu">
+    </div>
+        </section>
+    
+    <!--feature-->
+    <section  id="feature">
+        <div class="title-text">
+            <p> Welcome To Food Delivery</p>
+            <h1> Why Choose Us</h1>
+
+    <!--Add font awesome icons-->
+    <a href="https://www.facebook.com/fred.manyala.71" class="fa fa-facebook"></a> <a href="https://www.twitter.com/fred.manyala.71" class="fa fa-twitter"></a> <a href="https://www.instagram.com/fred.manyala.71" class="fa fa-instagram"></a> <a href="https://www.likedin.com/fred.manyala.71" class="fa fa-linkedin"></a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer">
+            <center>
+            <footer style="background-color: red"><b><b>
+                Copyright © 2021 <a href="index.html">Mercury Dishes.</a> All Rights Reserved.
+            </b></b></footer>
+            </center>
+    </section>
+<script>
+     var menuBtn = document.getElementById("menuBtn")
+     var sideNav = document.getElementById("sideNav")
+     var menu = document.getElementById("menu")
+
+        sideNav.style.right="-250px"
+
+     menuBtn.onclick = function(){
+         if(sideNav.style.right=="-250px"){
+             sideNav.style.right="0";
+             menu.src ="images/close.jpg";
+         }
+         else{
+             sideNav.style.right="-250px"
+             menu.src ="images/menu.jpg";
+         }
+     }
+</script>
+</body>
+</html> 
